@@ -7,15 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8475A5B2284D438400FB26B5 /* LogInData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5B0284D438400FB26B5 /* LogInData.xcdatamodeld */; };
+		8475A5B6284D448000FB26B5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5B5284D448000FB26B5 /* LogInViewController.swift */; };
+		8475A5BA284D457100FB26B5 /* Login+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5B8284D457100FB26B5 /* Login+CoreDataClass.swift */; };
+		8475A5BB284D457100FB26B5 /* Login+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5B9284D457100FB26B5 /* Login+CoreDataProperties.swift */; };
+		8475A5BD284D616A00FB26B5 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8475A5BC284D616A00FB26B5 /* SignUpViewController.swift */; };
 		84FE1656283EDA0A00583E93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE1655283EDA0A00583E93 /* AppDelegate.swift */; };
 		84FE1658283EDA0A00583E93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE1657283EDA0A00583E93 /* SceneDelegate.swift */; };
 		84FE165A283EDA0A00583E93 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE1659283EDA0A00583E93 /* ViewController.swift */; };
 		84FE165D283EDA0A00583E93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FE165B283EDA0A00583E93 /* Main.storyboard */; };
 		84FE165F283EDA0F00583E93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FE165E283EDA0F00583E93 /* Assets.xcassets */; };
 		84FE1662283EDA0F00583E93 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FE1660283EDA0F00583E93 /* LaunchScreen.storyboard */; };
+		84FE166E2843276A00583E93 /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE166D2843276A00583E93 /* SongsViewController.swift */; };
+		84FE1670284589C900583E93 /* BooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE166F284589C900583E93 /* BooksViewController.swift */; };
+		84FE16A62847BCC700583E93 /* BooksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE16A42847BCC700583E93 /* BooksCollectionViewCell.swift */; };
+		84FE16A72847BCC700583E93 /* BooksCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FE16A52847BCC700583E93 /* BooksCollectionViewCell.xib */; };
+		84FE16D2284972AA00583E93 /* Tell_The_Reaper_I'm_Sorry.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE16CE284972A900583E93 /* Tell_The_Reaper_I'm_Sorry.mp3 */; };
+		84FE16D4284972AA00583E93 /* Rookie_of_the_Year.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE16D0284972AA00583E93 /* Rookie_of_the_Year.mp3 */; };
+		84FE16D5284972AA00583E93 /* Broken.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE16D1284972AA00583E93 /* Broken.mp3 */; };
+		84FE16D72849B28600583E93 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE16D62849B28600583E93 /* PlayerViewController.swift */; };
+		84FE16DB284A5DF900583E93 /* Tom's_Diner_(Cover).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 84FE16DA284A5DF900583E93 /* Tom's_Diner_(Cover).mp3 */; };
+		84FE16DD284B1D8D00583E93 /* pdfViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE16DC284B1D8D00583E93 /* pdfViewController.swift */; };
+		84FE16E2284B247C00583E93 /* Induction.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84FE16E1284B247C00583E93 /* Induction.pdf */; };
+		84FE16E4284B41D600583E93 /* Murder on Tyneside.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84FE16E3284B41D600583E93 /* Murder on Tyneside.pdf */; };
+		84FE16E6284B41DF00583E93 /* The Reluctant Coroner.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84FE16E5284B41DF00583E93 /* The Reluctant Coroner.pdf */; };
+		84FE16E8284B41E800583E93 /* 20000 Leagues Under the Sea.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84FE16E7284B41E800583E93 /* 20000 Leagues Under the Sea.pdf */; };
+		84FE16EA284B4B1700583E93 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE16E9284B4B1700583E93 /* WebViewController.swift */; };
+		84FE16EC284BF7DE00583E93 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE16EB284BF7DE00583E93 /* NotesViewController.swift */; };
+		84FE16F1284C0DA500583E93 /* NotesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE16EF284C0DA500583E93 /* NotesCollectionViewCell.swift */; };
+		84FE16F2284C0DA500583E93 /* NotesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FE16F0284C0DA500583E93 /* NotesCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8475A5B1284D438400FB26B5 /* LogInData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LogInData.xcdatamodel; sourceTree = "<group>"; };
+		8475A5B5284D448000FB26B5 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		8475A5B8284D457100FB26B5 /* Login+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+CoreDataClass.swift"; sourceTree = "<group>"; };
+		8475A5B9284D457100FB26B5 /* Login+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		8475A5BC284D616A00FB26B5 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		84FE1652283EDA0A00583E93 /* funZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = funZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FE1655283EDA0A00583E93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84FE1657283EDA0A00583E93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +52,24 @@
 		84FE165E283EDA0F00583E93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FE1661283EDA0F00583E93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FE1663283EDA0F00583E93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FE166D2843276A00583E93 /* SongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsViewController.swift; sourceTree = "<group>"; };
+		84FE166F284589C900583E93 /* BooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksViewController.swift; sourceTree = "<group>"; };
+		84FE16A42847BCC700583E93 /* BooksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksCollectionViewCell.swift; sourceTree = "<group>"; };
+		84FE16A52847BCC700583E93 /* BooksCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BooksCollectionViewCell.xib; sourceTree = "<group>"; };
+		84FE16CE284972A900583E93 /* Tell_The_Reaper_I'm_Sorry.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tell_The_Reaper_I'm_Sorry.mp3"; sourceTree = "<group>"; };
+		84FE16D0284972AA00583E93 /* Rookie_of_the_Year.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Rookie_of_the_Year.mp3; sourceTree = "<group>"; };
+		84FE16D1284972AA00583E93 /* Broken.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Broken.mp3; sourceTree = "<group>"; };
+		84FE16D62849B28600583E93 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		84FE16DA284A5DF900583E93 /* Tom's_Diner_(Cover).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Tom's_Diner_(Cover).mp3"; sourceTree = "<group>"; };
+		84FE16DC284B1D8D00583E93 /* pdfViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pdfViewController.swift; sourceTree = "<group>"; };
+		84FE16E1284B247C00583E93 /* Induction.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Induction.pdf; sourceTree = "<group>"; };
+		84FE16E3284B41D600583E93 /* Murder on Tyneside.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Murder on Tyneside.pdf"; sourceTree = "<group>"; };
+		84FE16E5284B41DF00583E93 /* The Reluctant Coroner.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "The Reluctant Coroner.pdf"; sourceTree = "<group>"; };
+		84FE16E7284B41E800583E93 /* 20000 Leagues Under the Sea.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "20000 Leagues Under the Sea.pdf"; sourceTree = "<group>"; };
+		84FE16E9284B4B1700583E93 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		84FE16EB284BF7DE00583E93 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		84FE16EF284C0DA500583E93 /* NotesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesCollectionViewCell.swift; sourceTree = "<group>"; };
+		84FE16F0284C0DA500583E93 /* NotesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8475A5B7284D44AB00FB26B5 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				8475A5BC284D616A00FB26B5 /* SignUpViewController.swift */,
+				8475A5B5284D448000FB26B5 /* LogInViewController.swift */,
+				8475A5B8284D457100FB26B5 /* Login+CoreDataClass.swift */,
+				8475A5B9284D457100FB26B5 /* Login+CoreDataProperties.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
 		84FE1649283EDA0A00583E93 = {
 			isa = PBXGroup;
 			children = (
@@ -59,12 +116,64 @@
 				84FE1655283EDA0A00583E93 /* AppDelegate.swift */,
 				84FE1657283EDA0A00583E93 /* SceneDelegate.swift */,
 				84FE1659283EDA0A00583E93 /* ViewController.swift */,
+				84FE16E9284B4B1700583E93 /* WebViewController.swift */,
 				84FE165B283EDA0A00583E93 /* Main.storyboard */,
 				84FE165E283EDA0F00583E93 /* Assets.xcassets */,
 				84FE1660283EDA0F00583E93 /* LaunchScreen.storyboard */,
 				84FE1663283EDA0F00583E93 /* Info.plist */,
+				8475A5B0284D438400FB26B5 /* LogInData.xcdatamodeld */,
+				8475A5B7284D44AB00FB26B5 /* LogIn */,
+				84FE16CD2849727900583E93 /* Songs */,
+				84FE16CB2848FD6000583E93 /* Books */,
+				84FE16F3284C0DE300583E93 /* Notes */,
 			);
 			path = funZone;
+			sourceTree = "<group>";
+		};
+		84FE16CB2848FD6000583E93 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				84FE166F284589C900583E93 /* BooksViewController.swift */,
+				84FE16A42847BCC700583E93 /* BooksCollectionViewCell.swift */,
+				84FE16A52847BCC700583E93 /* BooksCollectionViewCell.xib */,
+				84FE16E0284B1F0700583E93 /* PDFs */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
+		84FE16CD2849727900583E93 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				84FE166D2843276A00583E93 /* SongsViewController.swift */,
+				84FE16D62849B28600583E93 /* PlayerViewController.swift */,
+				84FE16D1284972AA00583E93 /* Broken.mp3 */,
+				84FE16D0284972AA00583E93 /* Rookie_of_the_Year.mp3 */,
+				84FE16CE284972A900583E93 /* Tell_The_Reaper_I'm_Sorry.mp3 */,
+				84FE16DA284A5DF900583E93 /* Tom's_Diner_(Cover).mp3 */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		84FE16E0284B1F0700583E93 /* PDFs */ = {
+			isa = PBXGroup;
+			children = (
+				84FE16DC284B1D8D00583E93 /* pdfViewController.swift */,
+				84FE16E3284B41D600583E93 /* Murder on Tyneside.pdf */,
+				84FE16E7284B41E800583E93 /* 20000 Leagues Under the Sea.pdf */,
+				84FE16E5284B41DF00583E93 /* The Reluctant Coroner.pdf */,
+				84FE16E1284B247C00583E93 /* Induction.pdf */,
+			);
+			path = PDFs;
+			sourceTree = "<group>";
+		};
+		84FE16F3284C0DE300583E93 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				84FE16EB284BF7DE00583E93 /* NotesViewController.swift */,
+				84FE16EF284C0DA500583E93 /* NotesCollectionViewCell.swift */,
+				84FE16F0284C0DA500583E93 /* NotesCollectionViewCell.xib */,
+			);
+			path = Notes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +234,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FE16D2284972AA00583E93 /* Tell_The_Reaper_I'm_Sorry.mp3 in Resources */,
+				84FE16DB284A5DF900583E93 /* Tom's_Diner_(Cover).mp3 in Resources */,
+				84FE16E2284B247C00583E93 /* Induction.pdf in Resources */,
+				84FE16E4284B41D600583E93 /* Murder on Tyneside.pdf in Resources */,
+				84FE16D5284972AA00583E93 /* Broken.mp3 in Resources */,
 				84FE1662283EDA0F00583E93 /* LaunchScreen.storyboard in Resources */,
+				84FE16D4284972AA00583E93 /* Rookie_of_the_Year.mp3 in Resources */,
+				84FE16E6284B41DF00583E93 /* The Reluctant Coroner.pdf in Resources */,
+				84FE16A72847BCC700583E93 /* BooksCollectionViewCell.xib in Resources */,
 				84FE165F283EDA0F00583E93 /* Assets.xcassets in Resources */,
 				84FE165D283EDA0A00583E93 /* Main.storyboard in Resources */,
+				84FE16E8284B41E800583E93 /* 20000 Leagues Under the Sea.pdf in Resources */,
+				84FE16F2284C0DA500583E93 /* NotesCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +257,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8475A5BB284D457100FB26B5 /* Login+CoreDataProperties.swift in Sources */,
+				84FE1670284589C900583E93 /* BooksViewController.swift in Sources */,
+				84FE16EA284B4B1700583E93 /* WebViewController.swift in Sources */,
 				84FE165A283EDA0A00583E93 /* ViewController.swift in Sources */,
+				84FE166E2843276A00583E93 /* SongsViewController.swift in Sources */,
+				84FE16DD284B1D8D00583E93 /* pdfViewController.swift in Sources */,
+				84FE16D72849B28600583E93 /* PlayerViewController.swift in Sources */,
+				8475A5B6284D448000FB26B5 /* LogInViewController.swift in Sources */,
+				84FE16EC284BF7DE00583E93 /* NotesViewController.swift in Sources */,
 				84FE1656283EDA0A00583E93 /* AppDelegate.swift in Sources */,
+				8475A5BD284D616A00FB26B5 /* SignUpViewController.swift in Sources */,
+				84FE16F1284C0DA500583E93 /* NotesCollectionViewCell.swift in Sources */,
+				8475A5B2284D438400FB26B5 /* LogInData.xcdatamodeld in Sources */,
 				84FE1658283EDA0A00583E93 /* SceneDelegate.swift in Sources */,
+				84FE16A62847BCC700583E93 /* BooksCollectionViewCell.swift in Sources */,
+				8475A5BA284D457100FB26B5 /* Login+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +490,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8475A5B0284D438400FB26B5 /* LogInData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8475A5B1284D438400FB26B5 /* LogInData.xcdatamodel */,
+			);
+			currentVersion = 8475A5B1284D438400FB26B5 /* LogInData.xcdatamodel */;
+			path = LogInData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 84FE164A283EDA0A00583E93 /* Project object */;
 }
