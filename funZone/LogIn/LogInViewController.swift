@@ -12,10 +12,11 @@ class LogInViewController: UIViewController {
 
     @IBOutlet weak var userNameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
+    @IBOutlet weak var errorLabel: UILabel!
     @IBOutlet weak var isRemembered: UISwitch!
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    private var logs: [Login] = []
+    var logs: [Login] = []
     
     
 
@@ -33,7 +34,7 @@ class LogInViewController: UIViewController {
                     
                     if(isRemembered.isOn){
                         UDM.shared.defaults.setValue(true, forKey: "Remember me")
-                        UDM.shared.defaults.setValue(userNameText.text, forKey: "user")
+                        UDM.shared.defaults.setValue(userNameText.text, forKey: "username")
                     }
                     else{
                         UDM.shared.defaults.setValue(false, forKey: "Remember me")
@@ -47,11 +48,11 @@ class LogInViewController: UIViewController {
                     print("Account Successfuly Loged In")
                     return
                 }
-                print("The Password Is Incorrect")
+                errorLabel.text = "Password Is Incorrect"
                 return
             }
         }
-        print("Failed to Log In to Account")
+        errorLabel.text = "Failed Loging In to Account"
     }
     
     
@@ -60,7 +61,7 @@ class LogInViewController: UIViewController {
         
         if let value = UDM.shared.defaults.value(forKey: "Remember me") as? Bool{
             if(value){
-                if let user = UDM.shared.defaults.value(forKey: "user") as? String{
+                if let user = UDM.shared.defaults.value(forKey: "username") as? String{
                     userNameText.text = user
                     isRemembered.setOn(true, animated: true)
                 }
@@ -113,7 +114,7 @@ class LogInViewController: UIViewController {
     
     // Password
     func getPassword(username: String) -> String{
-        guard let data = KeychainManager.get(service: "SecureData", account: username) else{
+        guard let data = KeychainManager.get(service: "SaveData", account: username) else{
             print("Failed to read password")
             return ""
         }
@@ -124,7 +125,7 @@ class LogInViewController: UIViewController {
     
     func savePassword(user: String, password: String){
         do{
-            try KeychainManager.save(service: "SecureData", account: user, password: password.data(using: .utf8) ?? Data())
+            try KeychainManager.save(service: "SaveData", account: user, password: password.data(using: .utf8) ?? Data())
             
             
             
@@ -166,6 +167,7 @@ class KeychainManager{
         print("save")
         
     }
+    
     
     static func get(service: String, account: String) -> Data?{
         //service, account, class, return-data, matchlimit

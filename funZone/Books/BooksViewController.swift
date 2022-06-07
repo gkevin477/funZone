@@ -31,7 +31,8 @@ class BooksViewController: UIViewController {
         //create books contruct
         configureBooks()
         
-        
+        bookSumary.layer.cornerRadius = 20
+        bookSumary.layer.masksToBounds = true
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -97,6 +98,8 @@ extension BooksViewController: UICollectionViewDataSource{
         let book = books[indexPath.row]
         
         cell.configure(with: UIImage(named: book.booksCoverName)!)
+        cell.layer.cornerRadius = 20
+        cell.layer.masksToBounds = true
         
         return cell
     }

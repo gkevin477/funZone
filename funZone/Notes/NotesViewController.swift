@@ -10,7 +10,6 @@ import UIKit
 class NotesViewController: UIViewController {
 
     @IBOutlet var notesIn: UITextView!
-    @IBOutlet var label: UILabel!
     @IBOutlet var notesColllection: UICollectionView!
     
     var notes: [Note] = []
@@ -60,6 +59,7 @@ class NotesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        notesIn.layer.cornerRadius = 20
         
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -112,7 +112,8 @@ extension NotesViewController: UICollectionViewDataSource{
         let note = notes[indexPath.row]
         
         cell.configure(with: String(note.text))
-        
+        cell.layer.cornerRadius = 20
+        cell.layer.masksToBounds = true
         
         return cell
     }

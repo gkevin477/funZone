@@ -16,8 +16,15 @@
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KoT-5J-pj9">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="notepad-page-png-2" translatesAutoresizingMaskIntoConstraints="NO" id="hKK-zw-3do">
                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KoT-5J-pj9">
+                        <rect key="frame" x="2" y="0.0" width="48" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Du2-Cq-od2"/>
+                            <constraint firstAttribute="width" constant="48" id="qwM-wq-jGN"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -26,10 +33,16 @@
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="KoT-5J-pj9" secondAttribute="bottom" id="4t8-zM-4js"/>
-                <constraint firstAttribute="trailing" secondItem="KoT-5J-pj9" secondAttribute="trailing" id="WWe-bd-aqS"/>
-                <constraint firstItem="KoT-5J-pj9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="f3R-RX-vm4"/>
-                <constraint firstItem="KoT-5J-pj9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gI5-KM-O0m"/>
+                <constraint firstAttribute="bottom" secondItem="hKK-zw-3do" secondAttribute="bottom" id="C12-7i-gEe"/>
+                <constraint firstItem="KoT-5J-pj9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="2" id="FMz-TW-mOy"/>
+                <constraint firstAttribute="bottom" secondItem="KoT-5J-pj9" secondAttribute="bottom" id="MNm-qn-JSs"/>
+                <constraint firstAttribute="trailing" secondItem="KoT-5J-pj9" secondAttribute="trailing" id="Uuk-Qk-XPJ"/>
+                <constraint firstItem="KoT-5J-pj9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Yd9-BH-5vj"/>
+                <constraint firstItem="hKK-zw-3do" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="aAW-fF-4KJ"/>
+                <constraint firstAttribute="trailing" secondItem="hKK-zw-3do" secondAttribute="trailing" id="hzd-DD-HLn"/>
+                <constraint firstItem="hKK-zw-3do" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oi3-sf-Vtm"/>
+                <constraint firstAttribute="trailing" secondItem="hKK-zw-3do" secondAttribute="trailing" id="wfK-m3-nKy"/>
+                <constraint firstItem="hKK-zw-3do" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zrO-kQ-4lW"/>
             </constraints>
             <connections>
                 <outlet property="labelView" destination="KoT-5J-pj9" id="9pg-ra-UtR"/>
@@ -37,4 +50,7 @@
             <point key="canvasLocation" x="131.8840579710145" y="96.428571428571431"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="notepad-page-png-2" width="423" height="493"/>
+    </resources>
 </document>
